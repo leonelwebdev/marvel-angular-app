@@ -1,5 +1,9 @@
 # Quick Start
 
+## Visit a website
+https://www.marvel-app.tk
+
+## Run on local server
 ```bash
 git clone https://github.com/leonelwebdev/marvel-app.git
 cd marvel-app
@@ -10,7 +14,7 @@ npm install -g @angular/cli@latest
 # Install dependencies
 npm install
 
-# Run application in development
+# Run app
 ng serve
 ```
 
