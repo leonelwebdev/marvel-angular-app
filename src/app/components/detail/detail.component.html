@@ -1,0 +1,37 @@
+<spinner *ngIf="loading"></spinner>
+
+<div *ngIf="!loading">
+  <layout-header></layout-header>
+  <a [routerLink]="['']" class="arrow">
+    <i class="medium material-icons white-text" style="cursor: pointer;">
+      arrow_back
+    </i>
+  </a>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m7">
+        <div class="card">
+          <div class="card-image">
+            <img class="responsive-img" src="{{ character.thumbnail.path + '.' + character.thumbnail.extension }}" alt="{{ character.name }}">
+          </div>
+          <div class="card-content" *ngIf="character.description && character.description != ''">
+            <p>{{ character.description }}</p>
+          </div>
+          <div class="card-action red">
+            <h5 class="white-text center">{{ character.name }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="center red-text">A comic of this character.</h3>
+
+  <div class="container center">
+    <p class="flow-text center white-text">{{ comic.title }}</p>
+    <img class="responsive-img" src="{{ comic.thumbnail.path + '.' + comic.thumbnail.extension }}" alt="{{ comic.title }}">
+  </div>
+
+  <layout-footer></layout-footer>
+</div>

@@ -1,0 +1,38 @@
+<spinner *ngIf="loading"></spinner>
+
+<div class="contenedor" *ngIf="!loading">
+  <layout-header></layout-header>
+  <div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <form #search>
+        <div class="input-field red">
+          <input id="search" type="search" name="filterCharacter" (keydown.enter)="resetForm(search)" [(ngModel)]="filterCharacter" required>
+          <label class="label-icon" for="search">
+              <i class="material-icons">search</i>
+          </label>
+        </div>
+      </form>
+    </div>
+  </nav>
+  </div>
+  <h4 class="red-text center white">Characters</h4>
+  <div class="container">
+    <div class="row">
+      <div class="col l4 s12 m6" *ngFor="let character of characters | filter:filterCharacter">
+        <div class="card large">
+          <div class="card-image">
+            <img src="{{ character.thumbnail.path + '.' + character.thumbnail.extension }}" alt="{{ character.name }}">
+          </div>
+          <div class="card-content">
+            <h4>{{ character.name }}</h4>
+          </div>
+          <div class="card-action">
+            <a class="red-text" [routerLink]="['/character/', character.id]" style="font-size: 25px;">See more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<layout-footer></layout-footer>
+</div>
