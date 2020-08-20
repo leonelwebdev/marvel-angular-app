@@ -1,6 +1,6 @@
 # Quick Start
 
-## Visit a website
+## Visit the website
 https://www.marvel-app.tk
 
 ## Run on local server
@@ -18,4 +18,4 @@ npm install
 ng serve
 ```
 
-Now you can open on localhost:4200
+Now you can open on localhost:4200 in your browser.
