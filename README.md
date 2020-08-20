@@ -2,7 +2,7 @@
 
 ```bash
 git clone https://github.com/leonelwebdev/marvel-app.git
-cd angular-app-example
+cd marvel-app
 
 # Install Angular CLI if necessary
 npm install -g @angular/cli@latest
