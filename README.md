@@ -3,21 +3,15 @@
 ```bash
 git clone https://github.com/leonelwebdev/marvel-app.git
 cd angular-app-example
-```
 
-## Install Angular CLI if necessary
-```bash
+# Install Angular CLI if necessary
 npm install -g @angular/cli@latest
-```
 
-## Install dependencies
-```bash
+# Install dependencies
 npm install
-```
 
-## Run application in development
-```bash
-npm start
+# Run application in development
+ng serve
 ```
 
 Now you can open on localhost:4200
