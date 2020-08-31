@@ -3,7 +3,7 @@
 ## Visit the website
 https://www.marvel-app.tk
 
-## Run on local server
+## Or run on local server
 ```bash
 git clone https://github.com/leonelwebdev/marvel-app.git
 cd marvel-app
